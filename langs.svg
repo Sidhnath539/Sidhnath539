@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ff4fb8"/><stop offset="1" stop-color="#9d5cff"/></linearGradient></defs>
+<style>
+ text{font-family:Inter,system-ui,sans-serif}
+ .bar{transform-origin:left;transform-box:fill-box;animation:grow .9s cubic-bezier(.2,.9,.2,1) forwards;transform:scaleX(0)}
+ @keyframes grow{to{transform:scaleX(1)}}
+ .label{opacity:0;animation:fade .5s forwards}
+ @keyframes fade{to{opacity:1}}
+</style>
+<rect x="10" y="10" width="880" height="500" rx="28" fill="#1a0a20" stroke="#6f2267"/>
+<text x="50" y="62" font-size="22" font-weight="900" fill="#ffe8fb">LANGUAGES &amp; TOOLS</text>
+<text x="50" y="88" font-size="12" letter-spacing="2" fill="#b993b7">SKILLS FROM YOUR PROFILE</text>
+<g transform="translate(50,120)">
+ <g class="label" style="animation-delay:.15s"><text x="0" y="0" font-size="16" fill="#ffe8fb">HTML</text><text x="780" y="0" text-anchor="end" font-size="13" fill="#b993b7">90%</text><rect y="18" width="780" height="18" rx="9" fill="#3c1539"/><rect class="bar" y="18" width="702" height="18" rx="9" fill="url(#g)" style="animation-delay:.2s"/></g>
+ <g class="label" style="animation-delay:.3s" transform="translate(0,72)"><text x="0" y="0" font-size="16" fill="#ffe8fb">CSS</text><text x="780" y="0" text-anchor="end" font-size="13" fill="#b993b7">86%</text><rect y="18" width="780" height="18" rx="9" fill="#3c1539"/><rect class="bar" y="18" width="671" height="18" rx="9" fill="url(#g)" style="animation-delay:.35s"/></g>
+ <g class="label" style="animation-delay:.45s" transform="translate(0,144)"><text x="0" y="0" font-size="16" fill="#ffe8fb">JavaScript</text><text x="780" y="0" text-anchor="end" font-size="13" fill="#b993b7">82%</text><rect y="18" width="780" height="18" rx="9" fill="#3c1539"/><rect class="bar" y="18" width="640" height="18" rx="9" fill="url(#g)" style="animation-delay:.5s"/></g>
+ <g class="label" style="animation-delay:.6s" transform="translate(0,216)"><text x="0" y="0" font-size="16" fill="#ffe8fb">Python</text><text x="780" y="0" text-anchor="end" font-size="13" fill="#b993b7">76%</text><rect y="18" width="780" height="18" rx="9" fill="#3c1539"/><rect class="bar" y="18" width="593" height="18" rx="9" fill="url(#g)" style="animation-delay:.65s"/></g>
+ <g class="label" style="animation-delay:.75s" transform="translate(0,288)"><text x="0" y="0" font-size="16" fill="#ffe8fb">Java / C / DBMS</text><text x="780" y="0" text-anchor="end" font-size="13" fill="#b993b7">70%</text><rect y="18" width="780" height="18" rx="9" fill="#3c1539"/><rect class="bar" y="18" width="546" height="18" rx="9" fill="url(#g)" style="animation-delay:.8s"/></g>
+</g>
+</svg>

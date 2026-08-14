@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<defs>
+ <linearGradient id="g" x1="0" x2="1"><stop stop-color="#ff4fb8"/><stop offset="1" stop-color="#9d5cff"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+ text{font-family:Inter,system-ui,sans-serif}
+ .ring{transform-origin:170px 205px;transform-box:fill-box;animation:ring 2.2s cubic-bezier(.2,.9,.2,1) forwards}
+ @keyframes ring{from{stroke-dashoffset:440}to{stroke-dashoffset:74}}
+ .row{opacity:0;animation:row .65s forwards}
+ @keyframes row{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+</style>
+<rect x="10" y="10" width="880" height="400" rx="28" fill="#1a0a20" stroke="#6f2267"/>
+<text x="50" y="62" font-size="22" font-weight="900" fill="#ffe8fb">GITHUB SNAPSHOT</text>
+<text x="50" y="88" font-size="12" letter-spacing="2" fill="#b993b7">LOCAL • NO RATE-LIMITED CARD SERVICE</text>
+<circle cx="170" cy="205" r="115" fill="none" stroke="#4b1848" stroke-width="20"/>
+<circle class="ring" cx="170" cy="205" r="115" fill="none" stroke="url(#g)" stroke-width="20" stroke-linecap="round"
+ stroke-dasharray="440" stroke-dashoffset="440" transform="rotate(-90 170 205)" filter="url(#glow)"/>
+<text x="170" y="195" text-anchor="middle" font-size="38" font-weight="1000" fill="#ffe8fb">10</text>
+<text x="170" y="223" text-anchor="middle" font-size="14" fill="#c8a7c9">PUBLIC REPOS</text>
+<g class="row" style="animation-delay:.35s"><rect x="335" y="125" width="485" height="54" rx="16" fill="#25102c" stroke="#552053"/>
+<text x="360" y="158" font-size="15" fill="#c8a7c9">FOCUS</text><text x="795" y="158" text-anchor="end" font-size="17" font-weight="800" fill="#ffe8fb">Frontend + JavaScript</text></g>
+<g class="row" style="animation-delay:.55s"><rect x="335" y="190" width="485" height="54" rx="16" fill="#25102c" stroke="#552053"/>
+<text x="360" y="223" font-size="15" fill="#c8a7c9">STACK</text><text x="795" y="223" text-anchor="end" font-size="17" font-weight="800" fill="#ffe8fb">HTML • CSS • JS • Python</text></g>
+<g class="row" style="animation-delay:.75s"><rect x="335" y="255" width="485" height="54" rx="16" fill="#25102c" stroke="#552053"/>
+<text x="360" y="288" font-size="15" fill="#c8a7c9">ALSO</text><text x="795" y="288" text-anchor="end" font-size="17" font-weight="800" fill="#ffe8fb">C • Java • DBMS</text></g>
+<g class="row" style="animation-delay:.95s"><rect x="335" y="320" width="485" height="54" rx="16" fill="#25102c" stroke="#552053"/>
+<text x="360" y="353" font-size="15" fill="#c8a7c9">MINDSET</text><text x="795" y="353" text-anchor="end" font-size="17" font-weight="800" fill="#ff72c7">Coffee &amp; Code • Code &amp; Logic</text></g>
+</svg>

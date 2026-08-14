@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ff4fb8"/><stop offset="1" stop-color="#9d5cff"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>
+ text{font-family:Inter,system-ui,sans-serif}
+ .cell{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .65s cubic-bezier(.2,.9,.2,1) forwards}
+ @keyframes pop{0%{opacity:0;transform:scale(.55) translateY(20px)}70%{opacity:1;transform:scale(1.05)}100%{opacity:1;transform:scale(1)}}
+ .shine{animation:shine 4s 2s ease-in-out infinite}
+ @keyframes shine{0%{transform:translateX(-900px);opacity:0}25%{opacity:.8}55%{opacity:0}100%{transform:translateX(1000px);opacity:0}}
+</style>
+<rect x="10" y="10" width="880" height="410" rx="28" fill="#1a0a20" stroke="#6f2267"/>
+<text x="50" y="62" font-size="22" font-weight="900" fill="#ffe8fb">TROPHIES</text>
+<text x="50" y="88" font-size="12" letter-spacing="2" fill="#b993b7">PROFILE MILESTONES • LOCAL SVG</text>
+<g class="cell" style="animation-delay:.15s" transform="translate(50,120)"><rect width="245" height="235" rx="22" fill="#25102c" stroke="#552053"/><circle cx="122" cy="78" r="48" fill="none" stroke="url(#g)" stroke-width="10" filter="url(#glow)"/><path d="M101 58h42v28q0 28-21 28t-21-28Z M91 63h10v16H91 M143 63h10v16h-10 M114 114v20 M100 139h44" fill="none" stroke="#ffe8fb" stroke-width="6"/><text x="122" y="175" text-anchor="middle" font-size="25" font-weight="900" fill="#ff72c7">#1</text><text x="122" y="201" text-anchor="middle" font-size="15" fill="#ffe8fb">BUILD MODE</text><text x="122" y="222" text-anchor="middle" font-size="12" fill="#b993b7">Keep shipping</text></g>
+<g class="cell" style="animation-delay:.35s" transform="translate(327,120)"><rect width="245" height="235" rx="22" fill="#25102c" stroke="#552053"/><circle cx="122" cy="78" r="48" fill="none" stroke="url(#g)" stroke-width="10"/><path d="M96 88h52v34H96z M105 88V61h34v27 M100 122h44" fill="none" stroke="#ffe8fb" stroke-width="6"/><text x="122" y="175" text-anchor="middle" font-size="25" font-weight="900" fill="#ff72c7">#2</text><text x="122" y="201" text-anchor="middle" font-size="15" fill="#ffe8fb">LEARN MODE</text><text x="122" y="222" text-anchor="middle" font-size="12" fill="#b993b7">Turn curiosity into code</text></g>
+<g class="cell" style="animation-delay:.55s" transform="translate(604,120)"><rect width="245" height="235" rx="22" fill="#25102c" stroke="#552053"/><circle cx="122" cy="78" r="48" fill="none" stroke="url(#g)" stroke-width="10"/><path d="M122 49l8 19 21 2-16 14 5 21-18-11-18 11 5-21-16-14 21-2z" fill="#ff72c7" filter="url(#glow)"/><text x="122" y="175" text-anchor="middle" font-size="25" font-weight="900" fill="#ff72c7">#3</text><text x="122" y="201" text-anchor="middle" font-size="15" fill="#ffe8fb">GROW MODE</text><text x="122" y="222" text-anchor="middle" font-size="12" fill="#b993b7">Code • Logic • Growth</text></g>
+<rect class="shine" x="-250" y="100" width="160" height="300" fill="url(#g)" opacity=".0" transform="skewX(-18)"/>
+</svg>
